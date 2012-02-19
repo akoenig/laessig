@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+/*!
+ * laessig
+ *
+ * Copyright(c) 2012 André König <andre.koenig@gmail.com>
+ * MIT Licensed
+ *
+ */
+
+/**
+ * Module dependencies.
+ *
+ */
+var laessig = require('../')
+  , exec = require('child_process').exec
+  , program = require('commander');
+
+program
+    .version(laessig.version)
+    .option('-m, --minify', 'minifies the css files.')
+
+    program
+        .command('observe [dir]')
+        .description('observes the given directory and instantly compiles the less files on change')
+        .action(function(dir){
+        	if (!dir) {
+        		console.log('Please define an observable directory');
+        		return;
+        	}
+
+        	var options = {
+        		directory: dir,
+        		minify: program.minify
+        	};
+
+        	laessig.observe(options);
+        })
+
+    program.parse(process.argv);

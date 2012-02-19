@@ -1,0 +1,15 @@
+{
+  "name": "laessig",
+  "description": "A little tool which provides helpers for your day-to-day work with less.",
+  "version": "0.0.1",
+  "author": "André König <andre.koenig@gmail.com",
+  "dependencies": {
+    "less": "1.2.x",
+    "commander": "0.5.2",
+    "watch": "0.5.0"
+  },
+  "keywords": ["less", "watch"],
+  "repository": "git://github.com/akoenig/laessig.git",
+  "bin": { "laessig": "./bin/laessig" },
+  "engines": { "node":">= 0.5.0 < 0.7.0" }
+}
