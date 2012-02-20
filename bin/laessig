@@ -18,7 +18,7 @@ var laessig = require('../')
 
 program
     .version(laessig.version)
-    .option('-m, --minify', 'minifies the css files.')
+    .option('-m, --minify', 'minifies the css files.', false)
 
     program
         .command('observe [dir]')
