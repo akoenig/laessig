@@ -22,7 +22,7 @@ program
 
     program
         .command('observe [dir]')
-        .description('observes the given directory and instantly compiles the less files on change')
+        .description('observes the given directory and compiles them on a change')
         .action(function(dir){
         	if (!dir) {
         		console.log('Please define an observable directory');
