@@ -24,7 +24,7 @@ Observes a defined directory. If a less file changed, _laessig_ will compile it 
 
 You can also add a minify flag. If set _laessig_ will compress your css output:
 
-    $ laessig observe /the/path/to/your/less/files
+    $ laessig observe /the/path/to/your/less/files -m
 
 ## Important!
 Enjoy! :)
