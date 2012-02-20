@@ -4,7 +4,7 @@ Laessig (a german word (lässig) which stands for 'casual') is a small tool belt
 
 ## Installation
 
-In order to install 'laessig' you need a working [Node.js](http://nodejs.org/) environment. Please consider the great documentation in the [Node.js Github-Wiki]/(https://github.com/joyent/node/wiki) for a brief explanation about the installation steps.
+In order to install 'laessig' you need a working [Node.js](http://nodejs.org/) environment. Please consider the great documentation in the [Node.js Github-Wiki](https://github.com/joyent/node/wiki) for a brief explanation about the installation steps.
 
 You have to install ''laessig'' with root privileges via the NPM package system:
 
