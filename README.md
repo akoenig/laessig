@@ -1,12 +1,12 @@
 # laessig
 
-Laessig (a german word (lässig) which stands for 'casual') is a small tool belt which provides helpers for your day-to-day work with the css preprocessor [LESS](http://lesscss.org/).
+_laessig_ (a german word (lässig) which stands for 'casual') is a small tool belt which provides helpers for your day-to-day work with the css preprocessor [LESS](http://lesscss.org/).
 
 ## Installation
 
-In order to install 'laessig' you need a working [Node.js](http://nodejs.org/) environment. Please consider the great documentation in the [Node.js Github-Wiki](https://github.com/joyent/node/wiki) for a brief explanation about the installation steps.
+In order to install _laessig_ you need a working [Node.js](http://nodejs.org/) environment. Please consider the great documentation in the [Node.js Github-Wiki](https://github.com/joyent/node/wiki) for a brief explanation about the installation steps.
 
-You have to install ''laessig'' with root privileges via the NPM package system:
+You have to install _laessig_ with root privileges via the NPM package system:
 
     $ sudo npm install laessig -g
 
@@ -16,7 +16,7 @@ I've talked about a small tool belt, well, currently there is one command, but, 
 
 ### Observe
 
-Observes a defined directory. If a less file changed, ''laessig'' will compile it into the respective css file.
+Observes a defined directory. If a less file changed, _laessig_ will compile it into the respective css file.
 
 **Usage:**
 
