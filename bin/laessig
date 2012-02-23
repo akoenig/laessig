@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+"use strict";
+
 /*!
  * laessig
  *
@@ -12,29 +14,30 @@
  * Module dependencies.
  *
  */
-var laessig = require('../')
-  , exec = require('child_process').exec
-  , program = require('commander');
+var laessig = require('../'),
+    path = require('path'),
+    program = require('commander');
 
 program
     .version(laessig.version)
-    .option('-m, --minify', 'minifies the css files.', false)
+    .option('-m, --minify', 'minifies the css files.', false);
 
-    program
-        .command('observe [dir]')
-        .description('observes the given directory and compiles them on a change')
-        .action(function(dir){
-        	if (!dir) {
-        		console.log('Please define an observable directory');
-        		return;
-        	}
+program
+    .command('observe [LESS file]')
+    .description('Observes the given LESS file. If something has changed in the directory, "laessig" will compile the file.')
+    .action(function (file) {
+        if (!file) {
+            console.log('Please define an observable LESS file');
+            return;
+        }
 
-        	var options = {
-        		directory: dir,
-        		minify: program.minify
-        	};
+        var options = {
+            file: file,
+            directory: path.dirname(file),
+            minify: program.minify
+        };
 
-        	laessig.observe(options);
-        })
+        laessig.observe(options);
+    });
 
-    program.parse(process.argv);
+program.parse(process.argv);

@@ -1,7 +1,7 @@
 {
   "name": "laessig",
   "description": "A little tool which provides helpers for your day-to-day work with the css preprocessor LESS (http://lesscss.org/).",
-  "version": "0.0.2",
+  "version": "0.1",
   "author": "André König <andre.koenig@gmail.com",
   "dependencies": {
     "less": "1.2.x",
