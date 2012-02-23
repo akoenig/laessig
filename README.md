@@ -16,15 +16,15 @@ I've talked about a small tool belt, well, currently there is one command, but, 
 
 ### Observe
 
-Observes a defined directory. If a less file changed, _laessig_ will compile it into the respective css file.
+Observes a defined LESS file. If there are local changes, _laessig_ will compile it into the respective css file. Note that the tool observes the whole directory. So if you have some other LESS files which will be imported in the observed one, _laessig_ will also trigger the compile mechanism.
 
 **Usage:**
 
-    $ laessig observe /the/path/to/your/less/files
+    $ laessig observe /the/path/to/your/file.less
 
 You can also add a minify flag. If set _laessig_ will compress your css output:
 
-    $ laessig observe /the/path/to/your/less/files -m
+    $ laessig observe /the/path/to/your/file.less -m
 
 ## Important!
 Enjoy! :)
