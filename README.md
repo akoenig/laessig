@@ -16,7 +16,7 @@ I've talked about a small tool belt, well, currently there is one command, but, 
 
 ### Observe
 
-Observes a defined LESS file. If there are local changes, _laessig_ will compile it into the respective css file. Note that the tool observes the whole directory. So if you have some other LESS files which will be imported in the observed one, _laessig_ will also trigger the compile mechanism.
+Observes a defined LESS file. If there are local changes, _laessig_ will compile it into the respective css file. Note that the tool observes the whole directory. So if you have some other LESS files which will be imported into the observed one, _laessig_ will also trigger the compile mechanism.
 
 **Usage:**
 
