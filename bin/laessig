@@ -15,7 +15,6 @@
  *
  */
 var laessig = require('../'),
-    path = require('path'),
     program = require('commander');
 
 program
@@ -23,7 +22,7 @@ program
     .option('-m, --minify', 'minifies the css files.', false);
 
 program
-    .command('observe [LESS file]')
+    .command('observe [LESS-file]')
     .description('Observes the given LESS file. If something has changed in the directory, "laessig" will compile the file.')
     .action(function (file) {
         if (!file) {
@@ -33,7 +32,6 @@ program
 
         var options = {
             file: file,
-            directory: path.dirname(file),
             minify: program.minify
         };
 
